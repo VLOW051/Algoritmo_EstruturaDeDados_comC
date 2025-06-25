@@ -73,16 +73,12 @@ int main() {
     char *tokens[MAX_STACK];
     int n = 0;
 
-    printf("Digite a expressão em notação polonesa reversa (RPN), separando por espaço (ex: 5 3 + 2 *):\n");
-    printf("Operadores válidos: + - * /\n");
-    printf("Exemplo: Para (5 + 3) * 2, digite: 5 3 + 2 *\n");
-    printf("Expressão: ");
     if (fgets(entrada, sizeof(entrada), stdin) == NULL) {
         printf("Erro na leitura da entrada.\n");
         return 1;
     }
 
-    // Quebra a entrada em tokens
+  
     char *token = strtok(entrada, " \n");
     while (token != NULL && n < MAX_STACK) {
         tokens[n++] = token;

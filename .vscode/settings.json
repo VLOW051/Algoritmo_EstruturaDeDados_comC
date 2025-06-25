@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.page-template": "vue",
+    "*.layout-template": "vue",
+    "*.vue": "vue",
+    "*.embeddedhtml": "html",
+    "*.ejs": "html",
+    ".env*": "dotenv",
+    "revisao_structs": "c"
+  }
+}
